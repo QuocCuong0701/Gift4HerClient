@@ -5,22 +5,8 @@
         <div class="cd-slider-nav">
             <nav class="navbar">
                 <div class="tm-navbar-bg">
-                    <!--<a class="navbar-brand text-uppercase" v-bind:href = "clientDomain"><i class="fa fa-picture-o tm-brand-icon"></i>Gallery</a>-->
                     <a class="navbar-brand text-uppercase" v-bind:href = "clientDomain">
                         <img class="logo-img" :src="require('@/assets/img/gallery.png')"/> Gallery</a>
-                    <!--<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
-                        &#9776;
-                    </button>
-                    <div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item active selected">
-                                <a class="nav-link" href="#0" data-no="1">1st fluid <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#0" data-no="2">2nd fluid</a>
-                            </li>
-                        </ul>
-                    </div>-->
                 </div>
             </nav>
         </div>
@@ -55,11 +41,10 @@
                 <a href="mailto:quoc.cuong.yb.dhtb@gmail.com" class="tm-social-link"><i class="fa fa-google"></i></a>
                 <a href="#" class="tm-social-link"><i class="fa fa-twitter"></i></a>
                 <a href="https://github.com/QuocCuong0701" target="_blank" class="tm-social-link"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/pqcuong" target="_blank" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/pquoccuong" target="_blank" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
             </div>
             <p class="tm-copyright-text">Made with
-                <img alt="heart" height="20" width="20"
-                     src="https://github.githubassets.com/images/icons/emoji/unicode/2764.png">
+                <img alt="heart" height="20" width="20" :src="require('@/assets/img/heart.png')"/>
                 by <a href="https://github.com/QuocCuong0701" target="_blank">Quoc Cuong</a></p>
         </footer>
     </div>

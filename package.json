@@ -4,6 +4,7 @@
   "private": true,
   "author": "Quoc Cuong",
   "description": "Web client based on Vue",
+  "since": "June 2021",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
