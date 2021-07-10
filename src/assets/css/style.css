@@ -73,3 +73,11 @@
 .tm-social-icons-container a{
     border-radius: 50%;
 }
+
+.tm-navbar-bg, .tm-footer {
+    background-color: #ffa2b2;
+}
+
+.js-tm-page-content {
+    background-color: #fddee3;
+}

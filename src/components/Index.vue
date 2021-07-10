@@ -61,7 +61,7 @@
 
     import axios from "axios";
 
-    const serverDomain = "https://galleryservice.herokuapp.com/";
+    const serverDomain = "https://gift-4-you-service.herokuapp.com/";
 
     export default {
         name: "Index",
