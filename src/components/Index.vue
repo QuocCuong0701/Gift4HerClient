@@ -13,7 +13,7 @@
         <ul class="cd-hero-slider">
             <!-- Page 1 Gallery One -->
             <li class="selected">
-                <div class="cd-full-width">
+                <div class="cd-full-width tm-full-width">
                     <div class="container-fluid js-tm-page-content" data-page-no="1" data-page-type="gallery">
                         <div class="tm-img-gallery-container">
                             <div class="tm-img-gallery gallery-one">
