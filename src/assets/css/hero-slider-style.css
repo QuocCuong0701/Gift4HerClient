@@ -149,7 +149,7 @@ Slider
 .cd-hero-slider {
   position: relative;
   height: 360px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .cd-hero-slider li {
   position: absolute;
@@ -258,7 +258,7 @@ Single slide style
   left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .cd-hero-slider .cd-bg-video-wrapper video {
   /* you won't see this element in the html, but it will be injected using js */
