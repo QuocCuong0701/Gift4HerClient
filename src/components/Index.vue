@@ -167,8 +167,6 @@
         -----------------------------------------*/
         $(window).resize(function () {
             var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
-
-            // wait 3 seconds
             setTimeout(function () {
                 adjustHeightOfPage(currentPageNo);
             }, 1000);
@@ -177,10 +175,13 @@
 
         // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
         $('body').addClass('loaded');
-
         // Write current year in copyright text.
         $(".tm-copyright-year").text(new Date().getFullYear());
 
+        setTimeout(function () {
+            var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+            adjustHeightOfPage(currentPageNo);
+        }, 5000);
     });
 
     /* Google map
