@@ -6,7 +6,32 @@
             <nav class="navbar">
                 <div class="tm-navbar-bg">
                     <a class="navbar-brand text-uppercase" v-bind:href = "clientDomain">
-                        <img class="logo-img" :src="require('@/assets/img/gallery.png')"/> Gallery</a>
+                        <img class="logo-img" :src="require('@/assets/img/gallery.png')"/> Gallery
+                    </a>
+                    <div class="container-hpbd">
+                        <h2 class="loki">
+                            <p class="letter">H</p>
+                            <p class="letter">A</p>
+                            <p class="letter">P</p>
+                            <p class="letter">P</p>
+                            <p class="letter">Y</p>
+                            <p class="letter">B</p>
+                            <p class="letter">I</p>
+                            <p class="letter">R</p>
+                            <p class="letter">T</p>
+                            <p class="letter">H</p>
+                            <p class="letter">D</p>
+                            <p class="letter">A</p>
+                            <p class="letter">Y</p>
+                        </h2>
+                    </div>
+                    <!--<div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <audio autoplay="autoplay" controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>
+                            </li>
+                        </ul>
+                    </div>-->
                 </div>
             </nav>
         </div>
@@ -43,12 +68,27 @@
                 <a href="https://github.com/QuocCuong0701" target="_blank" class="tm-social-link"><i class="fa fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/pquoccuong" target="_blank" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
             </div>
-            <p class="tm-copyright-text">Made with
-                <img alt="heart" height="20" width="20" :src="require('@/assets/img/heart.png')"/>
-                by <a href="https://github.com/QuocCuong0701" target="_blank">Quoc Cuong</a></p>
+            <div class="tm-copyright-text">
+                <audio controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>
+                <p>Made with
+                    <img alt="heart" height="20" width="20" v-bind:src="require('@/assets/img/heart.png')"/>
+                    by <a class="made-by" href="https://github.com/QuocCuong0701" target="_blank">Quoc Cuong</a>
+                </p>
+            </div>
         </footer>
     </div>
 </template>
+
+<style scoped>
+    @import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Qahiri&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+</style>
 
 <script>
     import $ from 'jquery';
@@ -57,7 +97,6 @@
     import 'magnific-popup';
     import 'hero-slider';
     import 'tether';
-    import google from 'google-maps';
 
     import axios from "axios";
 
@@ -123,7 +162,7 @@
     */
     // $(window).load(function () {
     $(window).on('load', function () {
-
+        document.getElementById("theme-song").volume = 0.7;
         adjustHeightOfPage(1); // Adjust page height
 
         /* Gallery One pop up
@@ -184,45 +223,49 @@
         }, 5000);
     });
 
-    /* Google map
-    ------------------------------------------------*/
-    var map = '';
-    var center;
+    $(window).on('load', function () {
+        document.getElementById("theme-song").play();
+        var audio = document.getElementById("theme-song");
+        audio.autoplay = true;
+        audio.play();
+    });
 
-    // eslint-disable-next-line no-unused-vars
-    function initialize() {
-        var mapOptions = {
-            zoom: 13,
-            center: new google.maps.LatLng(37.779724, -122.452152),
-            scrollwheel: false
+    // HPBD
+    $(window).on('load', function () {
+        const fonts = [
+            'Kirang Haerang',
+            'Indie Flower',
+            'Rye',
+            'Amatic SC',
+            'Bangers',
+            'Fredericka the Great',
+            'Qahiri',
+            'Festive'
+        ];
+
+        const letters = document.querySelectorAll('.letter');
+
+        let count = 0;
+
+        const rollIntro = () => {
+            letters.forEach(letter => {
+
+                let randomFontIndex = Math.floor(Math.random() * fonts.length);
+                let randomFont = fonts[randomFontIndex];
+
+                letter.style.fontFamily = randomFont;
+            });
         };
 
-        map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-
-        google.maps.event.addDomListener(map, 'idle', function () {
-            calculateCenter();
-        });
-
-        google.maps.event.addDomListener(window, 'resize', function () {
-            map.setCenter(center);
-        });
-    }
-
-    function calculateCenter() {
-        center = map.getCenter();
-    }
-
-    /*function loadGoogleMap() {
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' + 'callback=initialize';
-        document.body.appendChild(script);
-    }*/
-
-    // DOM is ready
-    /*$(function () {
-        loadGoogleMap(); // Google Map
-    });*/
+        let time = Math.random() * (1000 - 700) + 700;
+        let introAnimation = setInterval(function () {
+            rollIntro();
+            if (count > 15)
+                clearInterval(introAnimation);
+            // count++;
+            console.log(time);
+        }, time);
+    });
 </script>
 
 <style scoped>
