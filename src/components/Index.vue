@@ -8,7 +8,7 @@
                     <a class="navbar-brand text-uppercase" v-bind:href = "clientDomain">
                         <img class="logo-img" :src="require('@/assets/img/gallery.png')"/> Gallery
                     </a>
-                    <div class="container-hpbd">
+                    <!--<div class="container-hpbd">
                         <h2 class="loki">
                             <p class="letter">H</p>
                             <p class="letter">A</p>
@@ -24,7 +24,7 @@
                             <p class="letter">A</p>
                             <p class="letter">Y</p>
                         </h2>
-                    </div>
+                    </div>-->
                     <!--<div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
@@ -231,7 +231,7 @@
     });
 
     // HPBD
-    $(window).on('load', function () {
+    /*$(window).on('load', function () {
         const fonts = [
             'Kirang Haerang',
             'Indie Flower',
@@ -262,10 +262,9 @@
             rollIntro();
             if (count > 15)
                 clearInterval(introAnimation);
-            // count++;
             console.log(time);
         }, time);
-    });
+    });*/
 </script>
 
 <style scoped>
