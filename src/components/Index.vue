@@ -69,7 +69,7 @@
                 <a href="https://www.linkedin.com/in/pquoccuong" target="_blank" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
             </div>
             <div class="tm-copyright-text">
-                <audio controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>
+<!--                <audio controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>-->
                 <p>Made with
                     <img alt="heart" height="20" width="20" v-bind:src="require('@/assets/img/heart.png')"/>
                     by <a class="made-by" href="https://github.com/QuocCuong0701" target="_blank">Quoc Cuong</a>
