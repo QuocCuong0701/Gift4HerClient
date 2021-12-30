@@ -25,13 +25,6 @@
                             <p class="letter">Y</p>
                         </h2>
                     </div>-->
-                    <!--<div class="collapse navbar-toggleable-md text-xs-center text-uppercase tm-navbar" id="tmNavbar">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item">
-                                <audio autoplay="autoplay" controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>
-                            </li>
-                        </ul>
-                    </div>-->
                 </div>
             </nav>
         </div>
@@ -160,9 +153,8 @@
     /*
         Everything is loaded including images.
     */
-    // $(window).load(function () {
     $(window).on('load', function () {
-        document.getElementById("theme-song").volume = 0.7;
+        // document.getElementById("theme-song").volume = 0.7;
         adjustHeightOfPage(1); // Adjust page height
 
         /* Gallery One pop up
@@ -212,7 +204,6 @@
 
         });
 
-        // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
         $('body').addClass('loaded');
         // Write current year in copyright text.
         $(".tm-copyright-year").text(new Date().getFullYear());
@@ -223,12 +214,12 @@
         }, 5000);
     });
 
-    $(window).on('load', function () {
+    /*$(window).on('load', function () {
         document.getElementById("theme-song").play();
         var audio = document.getElementById("theme-song");
         audio.autoplay = true;
         audio.play();
-    });
+    });*/
 
     // HPBD
     /*$(window).on('load', function () {
