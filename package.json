@@ -12,6 +12,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@popperjs/core": "^2.9.2",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
