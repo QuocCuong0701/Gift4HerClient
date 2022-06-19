@@ -25,6 +25,19 @@
                             <p class="letter">Y</p>
                         </h2>
                     </div>-->
+                    <div class="container-hpbd">
+                        <h2 class="loki">
+                            <p class="letter">T</p>
+                            <p class="letter">H</p>
+                            <p class="letter">U</p>
+                            <p class="letter">&nbsp;</p>
+                            <p class="letter">&nbsp;</p>
+                            <p class="letter">H</p>
+                            <p class="letter">I</p>
+                            <p class="letter">E</p>
+                            <p class="letter">N</p>
+                        </h2>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -224,7 +237,7 @@
     });*/
 
     // HPBD
-    /*$(window).on('load', function () {
+    $(window).on('load', function () {
         const fonts = [
             'Kirang Haerang',
             'Indie Flower',
@@ -257,7 +270,7 @@
                 clearInterval(introAnimation);
             console.log(time);
         }, time);
-    });*/
+    });
 </script>
 
 <style scoped>
