@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "google-maps": "^4.3.3",
     "hero-slider": "^2.0.3",
-    "jquery": "^1.11.3",
+    "jquery": "^3.6.0",
     "magnific-popup": "^1.1.0",
     "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",
@@ -32,9 +32,9 @@
     "vue": "^2.6.11"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "4.5.13",
-    "@vue/cli-plugin-eslint": "4.5.13",
-    "@vue/cli-service": "4.5.13",
+    "@vue/cli-plugin-babel": "^5.0.6",
+    "@vue/cli-plugin-eslint": "^5.0.6",
+    "@vue/cli-service": "^5.0.6",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
