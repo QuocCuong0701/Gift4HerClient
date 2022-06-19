@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.9.2",
+    "ansi-regex": "^6.0.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "core-js": "^3.6.5",
