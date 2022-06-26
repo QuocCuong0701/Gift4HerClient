@@ -276,7 +276,6 @@
             rollIntro();
             if (count > 15)
                 clearInterval(introAnimation);
-            console.log(time);
         }, time);
     });
 </script>
