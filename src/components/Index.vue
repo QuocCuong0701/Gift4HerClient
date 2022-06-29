@@ -28,8 +28,6 @@
                     <div class="container-hpbd">
                         <h2 class="loki">
                             <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
-                            <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
-                            <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
                             <p class="letter">&nbsp;</p>
                             <p class="letter">T</p>
                             <p class="letter">H</p>
@@ -41,8 +39,6 @@
                             <p class="letter">E</p>
                             <p class="letter">N</p>
                             <p class="letter">&nbsp;</p>
-                            <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
-                            <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
                             <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
                         </h2>
                     </div>
