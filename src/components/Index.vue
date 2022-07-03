@@ -5,11 +5,11 @@
         <div class="cd-slider-nav">
             <nav class="navbar">
                 <div class="tm-navbar-bg">
-                    <a class="navbar-brand text-uppercase" v-bind:href = "clientDomain">
+                    <a class="navbar-brand text-uppercase" v-bind:href="clientDomain">
                         <img class="logo-img" :src="require('@/assets/img/gallery.png')"/> Gallery
                     </a>
                     <!--<div class="container-hpbd">
-                        <h2 class="loki">
+                        <h2 class="dancing-letter">
                             <p class="letter">H</p>
                             <p class="letter">A</p>
                             <p class="letter">P</p>
@@ -26,8 +26,8 @@
                         </h2>
                     </div>-->
                     <div class="container-hpbd">
-                        <h2 class="loki">
-                            <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
+                        <h2 class="dancing-letter">
+                            <img class="heart-img" alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
                             <p class="letter">&nbsp;</p>
                             <p class="letter">T</p>
                             <p class="letter">H</p>
@@ -39,7 +39,7 @@
                             <p class="letter">E</p>
                             <p class="letter">N</p>
                             <p class="letter">&nbsp;</p>
-                            <img alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
+                            <img class="heart-img" alt="heart" height="25" width="25" v-bind:src="require('@/assets/img/heart.png')"/>
                         </h2>
                     </div>
                 </div>
@@ -55,11 +55,11 @@
                                 <!-- Gallery One pop up connected with JS code below -->
                                 <div v-for="file in files" :key="file.id" class="grid-item">
                                     <figure class="effect-sadie">
-                                        <img v-bind:src = file.fileUriCrop alt="Image" class="img-fluid tm-img" >
+                                        <img v-bind:src=file.fileUriCrop alt="Image" class="img-fluid tm-img">
                                         <figcaption>
                                             <h2 class="tm-figure-title"><span><strong></strong></span></h2>
                                             <p class="tm-figure-description"></p>
-                                            <a v-bind:href = file.fileUriOriginal>View more</a>
+                                            <a v-bind:href=file.fileUriOriginal>View more</a>
                                         </figcaption>
                                     </figure>
                                 </div>
@@ -72,14 +72,18 @@
 
         <footer class="tm-footer">
             <div class="tm-social-icons-container text-xs-center">
-                <a href="https://www.facebook.com/pqcuongg" target="_blank" class="tm-social-link"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.facebook.com/pqcuongg" target="_blank" class="tm-social-link"><i
+                        class="fa fa-facebook"></i></a>
                 <a href="mailto:quoc.cuong.yb.dhtb@gmail.com" class="tm-social-link"><i class="fa fa-google"></i></a>
-                <a href="https://www.instagram.com/_pqcuong_" target="_blank" class="tm-social-link"><i class="fa fa-instagram"></i></a>
-                <a href="https://github.com/QuocCuong0701" target="_blank" class="tm-social-link"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/pquoccuong" target="_blank" class="tm-social-link"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_pqcuong_" target="_blank" class="tm-social-link"><i
+                        class="fa fa-instagram"></i></a>
+                <a href="https://github.com/QuocCuong0701" target="_blank" class="tm-social-link"><i
+                        class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pquoccuong" target="_blank" class="tm-social-link"><i
+                        class="fa fa-linkedin"></i></a>
             </div>
             <div class="tm-copyright-text">
-<!--                <audio controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>-->
+                <!--<audio controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>-->
                 <p>Made with
                     <img alt="heart" height="20" width="20" v-bind:src="require('@/assets/img/heart.png')"/>
                     by <a class="made-by" href="https://github.com/QuocCuong0701" target="_blank">Quoc Cuong</a>
@@ -259,11 +263,8 @@
 
         const rollIntro = () => {
             letters.forEach(letter => {
-
                 let randomFontIndex = Math.floor(Math.random() * fonts.length);
-                let randomFont = fonts[randomFontIndex];
-
-                letter.style.fontFamily = randomFont;
+                letter.style.fontFamily = fonts[randomFontIndex];
             });
         };
 
