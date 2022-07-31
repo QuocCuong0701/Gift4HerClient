@@ -75,18 +75,18 @@
                 <a href="https://www.facebook.com/pqcuongg" target="_blank" class="tm-social-link"><i
                         class="fa fa-facebook"></i></a>
                 <a href="mailto:quoc.cuong.yb.dhtb@gmail.com" class="tm-social-link"><i class="fa fa-google"></i></a>
-                <a href="https://www.instagram.com/_pqcuong_" target="_blank" class="tm-social-link"><i
+                <a href="#" target="_blank" class="tm-social-link"><i
                         class="fa fa-instagram"></i></a>
-                <a href="https://github.com/QuocCuong0701" target="_blank" class="tm-social-link"><i
+                <a href="#" target="_blank" class="tm-social-link"><i
                         class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/pquoccuong" target="_blank" class="tm-social-link"><i
+                <a href="#" target="_blank" class="tm-social-link"><i
                         class="fa fa-linkedin"></i></a>
             </div>
             <div class="tm-copyright-text">
                 <!--<audio controls loop id="theme-song" class="theme-song" :src="require('@/assets/audio/Photograph.mp3')"></audio>-->
                 <p>Made with
                     <img alt="heart" height="20" width="20" v-bind:src="require('@/assets/img/heart.png')"/>
-                    by <a class="made-by" href="https://github.com/QuocCuong0701" target="_blank">Quoc Cuong</a>
+                    by <a class="made-by" href="https://www.facebook.com/pqcuongg" target="_blank">Quoc Cuong</a>
                     <br/>
                     <span style="font-size: 14px">Since 2021</span>
                 </p>
