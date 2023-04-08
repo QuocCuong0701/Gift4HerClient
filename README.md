@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install
+npm i --legacy-peer-deps (if 'npm install' not works)
 ```
 
 ### Compiles and hot-reloads for development
