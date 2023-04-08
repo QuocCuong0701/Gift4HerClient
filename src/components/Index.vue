@@ -116,7 +116,8 @@
 
     import axios from "axios";
 
-    const serverDomain = "https://gift-4-you-service.herokuapp.com/";
+    // const serverDomain = "https://gift-4-you-service.herokuapp.com/";
+    const serverDomain = "http://localhost:8080/";
 
     export default {
         name: "Index",
@@ -127,7 +128,8 @@
             return {
                 files: [],
                 errors: [],
-                clientDomain: "https://gift-4-you.herokuapp.com/"
+                // clientDomain: "https://gift-4-you.herokuapp.com/"
+                clientDomain: "http://localhost:8000/"
             }
         },
         created() {

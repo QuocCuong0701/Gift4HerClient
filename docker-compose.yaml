@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  mynetwork:
+    driver: bridge
+
+services:
+  upload-web:
+    image: "lquoccuongl/gift4herclient:v0.0.1"
+    container_name: upload-web
+    ports:
+      - "8000:8080"
+    volumes:
+      - /upload-web/:/data/upload-web
+    networks:
+      - mynetwork
